@@ -1,0 +1,63 @@
+{
+    // Base VSCode
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "jupyter.alwaysTrustNotebooks": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    // Apply formatter extension (vetur formatter, editor config)
+    // Equivalent to pressing
+    // Shift + Option + F before saving
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    // VSCode ESLint - autoapply fix lint on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
+    },
+    // Code Runner Extension
+    "code-runner.executorMap": {
+        "python": "python $fullFileName"
+    },
+    "code-runner.showExecutionMessage": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    // Git
+    "git.autofetch": true,
+    // VSCode Python
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.showStartPage": false,
+    // Vetur Extension
+    // Watch for conflicts with ESLint if you turn this on
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.ts": "none",
+    "vetur.validation.templateProps": true,
+    "vetur.format.options.useTabs": false,
+    "vetur.format.options.tabSize": 4,
+    "vetur.ignoreProjectWarning": true,
+    // Import Cost Extension
+    "importCost.timeout": 1000000,
+    "python.defaultInterpreterPath": "/Users/matthewbell/.pyenv/versions/3.9.0/bin/python",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "terminal.external.osxExec": "iTerm.app",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.defaultProfile.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "Cousine for Powerline",
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80
+    }
+}
