@@ -42,3 +42,12 @@ gpo() {
     branch_name=`git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3`;
     git push origin $branch_name
 }
+
+# Fixes issue with pyenv and links tkinter
+# https://github.com/pyenv/pyenv/issues/1737
+export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix tcl-tk)/include"
+export CPPFLAGS="-I/usr/local/opt/tcl-tk/include "
+export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib -L/usr/local/opt/tcl-tk/lib -L$(brew --prefix tcl-tk)/lib"
+export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl8.6 -ltk8.6'"
