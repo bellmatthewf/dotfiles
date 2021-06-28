@@ -111,11 +111,11 @@ export LANG=en_US.UTF-8
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
 alias grmain="git reset --hard origin/main"
 alias grmaster="git reset --hard origin/master"
 alias gac="git add --all && git commit -a -m "
+alias dc='docker-compose'
+
 
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
