@@ -1,5 +1,10 @@
 echo 'Terminal of MattyB'
 
+alias grmain="git reset --hard origin/main"
+alias grmaster="git reset --hard origin/master"
+alias gac="git add --all && git commit -a -m "
+alias dc='docker-compose'
+
 # The original version is saved in .bash_profile.pysave
 export PIPENV_NO_INHERIT=True
 export PIPENV_VERBOSITY="-1"
