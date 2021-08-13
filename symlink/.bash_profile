@@ -11,10 +11,10 @@ export PIPENV_VERBOSITY="-1"
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\u@\h \$(parse_git_branch) $ "
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
