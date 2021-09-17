@@ -21,13 +21,13 @@ brew install yarn
 brew install zeromq
 
 # Install Brew Casks
-brew cask install google-chrome
-brew cask install firefox
-brew cask install spotify
-brew cask install discord
-brew cask install vlc
-brew cask install google-cloud-sdk
-brew cask install postico
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install docker
+brew install google-chrome
+brew install firefox
+brew install spotify
+brew install discord
+brew install vlc
+brew install google-cloud-sdk
+brew install postico
+brew install iterm2
+brew install visual-studio-code
+brew install docker
