@@ -31,3 +31,4 @@ brew install postico
 brew install iterm2
 brew install visual-studio-code
 brew install docker
+brew install zoom
