@@ -30,5 +30,5 @@ brew install google-cloud-sdk
 brew install postico
 brew install iterm2
 brew install visual-studio-code
-brew install docker
+brew install homebrew/cask/docker
 brew install zoom
