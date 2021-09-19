@@ -142,7 +142,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 # if [ -f '/Users/matthewbell/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/matthewbell/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 # Github pull request function
