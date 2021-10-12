@@ -34,3 +34,4 @@ brew install homebrew/cask/docker
 brew install zoom
 brew install slack
 brew install authy
+brew install spectacle
