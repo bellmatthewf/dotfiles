@@ -35,3 +35,4 @@ brew install zoom
 brew install slack
 brew install authy
 brew install spectacle
+brew install postman
