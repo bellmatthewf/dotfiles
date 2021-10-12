@@ -32,3 +32,5 @@ brew install iterm2
 brew install visual-studio-code
 brew install homebrew/cask/docker
 brew install zoom
+brew install slack
+brew install authy
