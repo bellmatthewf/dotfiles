@@ -36,3 +36,4 @@ brew install slack
 brew install authy
 brew install spectacle
 brew install postman
+brew install 1password
