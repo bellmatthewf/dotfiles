@@ -83,7 +83,6 @@ plugins=(
     git
     sudo
     yarn
-    zsh_reload
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
