@@ -3,6 +3,7 @@ echo 'Terminal of MattyB'
 alias grmain="git reset --hard origin/main"
 alias grmaster="git reset --hard origin/master"
 alias gac="git add --all && git commit -a -m "
+alias gst="git status"
 alias dc='docker-compose'
 
 export NVM_DIR="$HOME/.nvm"
