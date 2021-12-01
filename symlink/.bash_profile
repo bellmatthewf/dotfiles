@@ -5,6 +5,11 @@ alias grmaster="git reset --hard origin/master"
 alias gac="git add --all && git commit -a -m "
 alias dc='docker-compose'
 
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
 # The original version is saved in .bash_profile.pysave
 export PIPENV_NO_INHERIT=True
 export PIPENV_VERBOSITY="-1"
