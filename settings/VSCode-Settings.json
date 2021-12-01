@@ -35,6 +35,8 @@
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "basic",
     "python.showStartPage": false,
+    "python.linting.enabled": true,
+    "python.defaultInterpreterPath": "/Users/matthewbell/.pyenv/versions/3.9.0/bin/python",
     // Vetur Extension
     // Watch for conflicts with ESLint if you turn this on
     "vetur.format.defaultFormatter.js": "vscode-typescript",
@@ -46,16 +48,11 @@
     "vetur.ignoreProjectWarning": true,
     // Import Cost Extension
     "importCost.timeout": 1000000,
-    "python.defaultInterpreterPath": "/Users/matthewbell/.pyenv/versions/3.9.0/bin/python",
     "prettier.tabWidth": 4,
     "prettier.useTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "terminal.external.osxExec": "iTerm.app",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "terminal.integrated.defaultProfile.osx": "/bin/zsh",
-    "terminal.integrated.fontFamily": "Cousine for Powerline",
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80
