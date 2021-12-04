@@ -21,19 +21,19 @@ brew install yarn
 brew install zeromq
 
 # Install Brew Casks
-brew install google-chrome
-brew install firefox
-brew install spotify
-brew install discord
-brew install vlc
-brew install google-cloud-sdk
-brew install postico
-brew install iterm2
-brew install visual-studio-code
-brew install homebrew/cask/docker
-brew install zoom
-brew install slack
-brew install authy
-brew install spectacle
-brew install postman
-brew install 1password
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask spotify
+brew install --cask discord
+brew install --cask vlc
+brew install --cask google-cloud-sdk
+brew install --cask postico
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask homebrew/cask/docker
+brew install --cask zoom
+brew install --cask slack
+brew install --cask authy
+brew install --cask spectacle
+brew install --cask postman
+brew install --cask 1password
