@@ -31,9 +31,9 @@ brew install --cask postico
 brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install --cask homebrew/cask/docker
-brew install --cask zoom
 brew install --cask slack
 brew install --cask authy
 brew install --cask spectacle
 brew install --cask postman
 brew install --cask 1password
+brew install --cask zoom
