@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Install Brew Packages
+# Test
 brew install git-secret
 brew install grep
 brew install libpq
