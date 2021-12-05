@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Test
 # Install Brew Packages
 brew install git-secret
 brew install grep
