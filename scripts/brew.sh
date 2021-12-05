@@ -19,6 +19,7 @@ brew install tree
 brew install wget
 brew install yarn
 brew install zeromq
+brew install gpg
 
 # Install Brew Casks
 brew install --cask google-chrome
@@ -36,4 +37,5 @@ brew install --cask authy
 brew install --cask spectacle
 brew install --cask postman
 brew install --cask 1password
+brew install --cask gpg-suite
 brew install --cask zoom
