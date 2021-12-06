@@ -21,6 +21,12 @@ brew install yarn
 brew install zeromq
 brew install gpg
 
+#Needed for pyautogui
+brew install libtiff 
+brew install libjpeg 
+brew install webp 
+brew install little-cms2
+
 # Install Brew Casks
 brew install --cask google-chrome
 brew install --cask firefox
