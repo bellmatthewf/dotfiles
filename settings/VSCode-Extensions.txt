@@ -1,4 +1,3 @@
-CoenraadS.bracket-pair-colorizer-2
 dariofuzinato.vue-peek
 dbaeumer.vscode-eslint
 eamodio.gitlens
@@ -16,8 +15,6 @@ mtxr.sqltools
 octref.vetur
 oderwat.indent-rainbow
 pranaygp.vscode-css-peek
-ritwickdey.LiveServer
-salesforce.salesforcedx-vscode-apex
 sdras.vue-vscode-snippets
 silvenon.mdx
 wix.vscode-import-cost
