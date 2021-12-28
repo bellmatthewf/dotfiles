@@ -1,26 +1,26 @@
-dariofuzinato.vue-peek
-dbaeumer.vscode-eslint
-eamodio.gitlens
-esbenp.prettier-vscode
-formulahendry.code-runner
-hashicorp.terraform
-mechatroner.rainbow-csv
-monokai.theme-monokai-pro-vscode
-ms-azuretools.vscode-docker
-ms-python.python
-ms-python.vscode-pylance
-ms-toolsai.jupyter
-ms-vsliveshare.vsliveshare
-mtxr.sqltools
-octref.vetur
-oderwat.indent-rainbow
-pranaygp.vscode-css-peek
-sdras.vue-vscode-snippets
-silvenon.mdx
-wix.vscode-import-cost
-yzhang.markdown-all-in-one
-bungcip.better-toml
-burkeholland.simple-react-snippets
-mgmcdermott.vscode-language-babel
-ms-toolsai.jupyter-keymap
-ms-toolsai.jupyter-renderers
+code --install-extension dariofuzinato.vue-peek
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.code-runner
+code --install-extension hashicorp.terraform
+code --install-extension mechatroner.rainbow-csv
+code --install-extension monokai.theme-monokai-pro-vscode
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension mtxr.sqltools
+code --install-extension octref.vetur
+code --install-extension oderwat.indent-rainbow
+code --install-extension pranaygp.vscode-css-peek
+code --install-extension sdras.vue-vscode-snippets
+code --install-extension silvenon.mdx
+code --install-extension wix.vscode-import-cost
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension bungcip.better-toml
+code --install-extension burkeholland.simple-react-snippets
+code --install-extension mgmcdermott.vscode-language-babel
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
