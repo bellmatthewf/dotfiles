@@ -1,6 +1,6 @@
 {
     // Base VSCode
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "workbench.colorTheme": "Monokai",
     "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -25,6 +25,7 @@
     "code-runner.executorMap": {
         "python": "python $fullFileName"
     },
+    "code-runner.enableAppInsights": false,
     "code-runner.showExecutionMessage": false,
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveAllFilesBeforeRun": true,
@@ -37,7 +38,7 @@
     "python.analysis.typeCheckingMode": "basic",
     "python.showStartPage": false,
     "python.linting.enabled": true,
-    "python.defaultInterpreterPath": "/Users/matthewbell/.pyenv/versions/3.9.0/bin/python",
+    "python.terminal.activateEnvironment": false,
     // Vetur Extension
     // Watch for conflicts with ESLint if you turn this on
     "vetur.format.defaultFormatter.js": "vscode-typescript",
@@ -76,6 +77,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
