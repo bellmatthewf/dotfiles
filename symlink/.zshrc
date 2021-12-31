@@ -192,3 +192,7 @@ gpo() {
 #export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
 #export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 #export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl8.6 -ltk8.6'"
+
+# Needed for commit signing -- see url below for troubleshooting GPG
+# https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
+export GPG_TTY=$(tty)
