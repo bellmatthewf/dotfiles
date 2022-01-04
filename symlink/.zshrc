@@ -195,4 +195,5 @@ gpo() {
 
 # Needed for commit signing -- see url below for troubleshooting GPG
 # https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
+# If it isn't working google GPG suite and download that
 export GPG_TTY=$(tty)
