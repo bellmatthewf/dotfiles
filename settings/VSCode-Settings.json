@@ -41,6 +41,7 @@
     "python.terminal.activateEnvironment": false,
     // Vetur Extension
     // Watch for conflicts with ESLint if you turn this on
+    // "vetur.experimental.templateInterpolationService": true,
     "vetur.format.defaultFormatter.js": "vscode-typescript",
     "vetur.format.defaultFormatter.html": "js-beautify-html",
     "vetur.format.defaultFormatter.ts": "none",
