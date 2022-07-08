@@ -2,7 +2,7 @@
     // Base VSCode
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+    "workbench.iconTheme": "Monokai Classic Icons",
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.format.insertSpaceAfterConstructor": true,
     "jupyter.alwaysTrustNotebooks": true,
@@ -43,7 +43,6 @@
     // Watch for conflicts with ESLint if you turn this on
     // "vetur.experimental.templateInterpolationService": true,
     "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.html": "js-beautify-html",
     "vetur.format.defaultFormatter.ts": "none",
     "vetur.validation.templateProps": true,
     "vetur.format.options.useTabs": false,
@@ -81,6 +80,13 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[vue]": {
+        // "editor.defaultFormatter": "octref.vetur"
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 1,
+    "editor.gotoLocation.multipleDefinitions": "goto"
 }
