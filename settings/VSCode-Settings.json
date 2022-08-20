@@ -86,6 +86,10 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[makefile]": {
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false
+    },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "window.zoomLevel": 1,
     // Helps in typescript+react to let you CMD+Click into custom components
