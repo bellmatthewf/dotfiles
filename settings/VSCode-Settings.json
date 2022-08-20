@@ -36,7 +36,7 @@
     "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "basic",
-    "python.showStartPage": false,
+    "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.terminal.activateEnvironment": false,
     // Vetur Extension
