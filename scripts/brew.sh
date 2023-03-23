@@ -47,3 +47,4 @@ brew install --cask postman
 brew install --cask 1password
 brew install --cask gpg-suite
 brew install --cask zoom
+brew install homebrew/cask/flux
