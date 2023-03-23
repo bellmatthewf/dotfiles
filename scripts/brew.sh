@@ -26,6 +26,8 @@ brew install libtiff
 brew install libjpeg 
 brew install webp 
 brew install little-cms2
+brew install caddy 
+brew install nss
 
 # Install Brew Casks
 brew install --cask google-chrome
