@@ -5,7 +5,6 @@ export NVM_DIR="$HOME/.nvm"
     [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
     [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -120,6 +119,7 @@ alias grmain="git reset --hard origin/main"
 alias grmaster="git reset --hard origin/master && git clean -fdx"
 alias gac="git add --all && git commit -a -m "
 alias dc='docker-compose'
+alias activate='source .venv/bin/activate'
 
 
 # alias zshconfig="mate ~/.zshrc"
@@ -199,7 +199,8 @@ gpo() {
 # If it isn't working google GPG suite and download that
 
 # Fix pyenv
-export GPG_TTY=$(tty)export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export GPG_TTY=$TTY
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
