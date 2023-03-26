@@ -26,6 +26,8 @@ brew install libtiff
 brew install libjpeg 
 brew install webp 
 brew install little-cms2
+brew install caddy 
+brew install nss
 
 # Install Brew Casks
 brew install --cask google-chrome
@@ -45,3 +47,4 @@ brew install --cask postman
 brew install --cask 1password
 brew install --cask gpg-suite
 brew install --cask zoom
+brew install homebrew/cask/flux

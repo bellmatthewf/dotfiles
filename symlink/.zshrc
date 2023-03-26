@@ -2,8 +2,8 @@
 
 # This loads nvm
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -119,6 +119,7 @@ alias grmain="git reset --hard origin/main"
 alias grmaster="git reset --hard origin/master && git clean -fdx"
 alias gac="git add --all && git commit -a -m "
 alias dc='docker-compose'
+alias activate='source .venv/bin/activate'
 
 
 # alias zshconfig="mate ~/.zshrc"
@@ -186,14 +187,35 @@ gpo() {
 
 # Fixes issue with pyenv and links tkinter
 # https://github.com/pyenv/pyenv/issues/1737
-#export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix tcl-tk)/include"
-#export CPPFLAGS="-I/usr/local/opt/tcl-tk/include "
-#export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib -L/usr/local/opt/tcl-tk/lib -L$(brew --prefix tcl-tk)/lib"
-#export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
-#export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+# export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix tcl-tk)/include"
+# export CPPFLAGS="-I/usr/local/opt/tcl-tk/include "
+# export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib -L/usr/local/opt/tcl-tk/lib -L$(brew --prefix tcl-tk)/lib"
+# export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
+# export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 #export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl8.6 -ltk8.6'"
 
 # Needed for commit signing -- see url below for troubleshooting GPG
 # https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
 # If it isn't working google GPG suite and download that
-export GPG_TTY=$(tty)
+
+# Fix pyenv
+export GPG_TTY=$TTY
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+export PYTHON_CONFIGURE_OPTS=--enable-unicode=ucs2
+
+
+# Fix partnerstack make setup
+PATH="$(brew --prefix postgresql@11)/bin:$PATH"
+
+export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib -L$(brew --prefix libpq)/lib -I$(brew --prefix zlib)/lib"
+export CFLAGS="-I$(brew --prefix openssl@1.1)/include -I$(brew --prefix libpq)/include -I$(brew --prefix zlib)/include"
+export CPPFLAGS="-I$(brew --prefix openssl@1.1)/include -I$(brew --prefix libpq)/include -I$(brew --prefix zlib)/include"
+
+alias brew86=“arch -x86_64 /usr/local/homebrew/bin/brew”
+alias brewARM=“/opt/homebrew/bin/brew”
+
+export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
+export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
