@@ -22,12 +22,13 @@ brew install zeromq
 brew install gpg
 
 #Needed for pyautogui
-brew install libtiff 
-brew install libjpeg 
-brew install webp 
+brew install libtiff
+brew install libjpeg
+brew install webp
 brew install little-cms2
-brew install caddy 
+brew install caddy
 brew install nss
+brew install pinentry-mac
 
 # Install Brew Casks
 brew install --cask google-chrome
@@ -46,5 +47,6 @@ brew install --cask spectacle
 brew install --cask postman
 brew install --cask 1password
 brew install --cask gpg-suite
+brew install --cask rectangle
 brew install --cask zoom
 brew install homebrew/cask/flux
