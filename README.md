@@ -1,2 +1,3 @@
 # dotfiles
-Dotfiles and initial setup scripts
+
+Dotfiles and initial setup scripts.
