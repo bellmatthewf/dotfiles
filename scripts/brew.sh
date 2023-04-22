@@ -21,7 +21,7 @@ brew install yarn
 brew install zeromq
 brew install gpg
 
-#Needed for pyautogui
+brew install stripe/stripe-cli/stripe
 brew install libtiff
 brew install libjpeg
 brew install webp
