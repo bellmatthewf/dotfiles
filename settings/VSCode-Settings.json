@@ -11,16 +11,15 @@
     // Equivalent to pressing
     // Shift + Option + F before saving
     "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
     "editor.formatOnSave": true,
     "editor.stickyScroll.enabled": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.gotoLocation.multipleDefinitions": "goto",
     // VSCode ESLint - autoapply fix lint on save
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
     // Code Runner Extension
     "code-runner.executorMap": {
@@ -34,12 +33,8 @@
     // Git
     "git.autofetch": true,
     // VSCode Python
-    "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
-    "python.linting.pylintEnabled": false,
     "python.analysis.typeCheckingMode": "basic",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
     "python.terminal.activateEnvironment": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     // Vetur Extension
@@ -62,12 +57,20 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
-    "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        }
+    },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        }
     },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -89,14 +92,24 @@
         "editor.insertSpaces": false,
         "editor.detectIndentation": false
     },
-    "workbench.editor.untitled.hint": "hidden",
     "redhat.telemetry.enabled": true,
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "editor.minimap.enabled": false,
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "editor.accessibilitySupport": "off",
+    "workbench.editor.empty.hint": "hidden",
+    "[javascript][typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
     },
     "window.zoomLevel": 1
 }
