@@ -20,7 +20,7 @@
     "editor.gotoLocation.multipleDefinitions": "goto",
     // VSCode ESLint - autoapply fix lint on save
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
+        "source.organizeImports": "always"
     },
     // Code Runner Extension
     "code-runner.executorMap": {
@@ -38,12 +38,6 @@
     "python.analysis.typeCheckingMode": "basic",
     "python.terminal.activateEnvironment": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    // Vetur Extension
-    // Watch for conflicts with ESLint if you turn this on
-    // "vetur.experimental.templateInterpolationService": true,
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.ts": "none",
-    "vetur.validation.templateProps": true,
     "vetur.format.options.useTabs": false,
     "vetur.format.options.tabSize": 4,
     "vetur.ignoreProjectWarning": true,
@@ -59,19 +53,13 @@
         "javascript": "javascriptreact"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -83,8 +71,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[vue]": {
-        // "editor.defaultFormatter": "octref.vetur"
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -100,6 +90,7 @@
     "editor.minimap.enabled": false,
     "[python]": {
         "editor.formatOnType": true,
+
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "terminal.integrated.env.osx": {
@@ -107,19 +98,12 @@
     },
     "editor.accessibilitySupport": "off",
     "workbench.editor.empty.hint": "hidden",
-    "ruby.codeCompletion": "rcodetools",
-    "ruby.intellisense": "rubyLocate",
-    "ruby.useLanguageServer": true,
-    // "ruby.rubocop.onSave": true,
-    // "editor.formatOnSaveTimeout": 5000,
-    // "editor.formatOnSave": true,
     "files.associations": {
-        "*.erb": "erb"
+        "*.erb": "erb",
+        "*.vue": "vue"
     },
-    "[javascript][typescript]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": "explicit"
-        }
-    },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "testing.followRunningTest": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false
+    // "black-formatter.path": [".venv/bin/black"]
 }
