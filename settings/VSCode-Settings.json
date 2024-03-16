@@ -104,6 +104,6 @@
     },
     "window.zoomLevel": 1,
     "testing.followRunningTest": false,
-    "python.testing.autoTestDiscoverOnSaveEnabled": false
-    // "black-formatter.path": [".venv/bin/black"]
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "black-formatter.path": [".venv/bin/black"]
 }
