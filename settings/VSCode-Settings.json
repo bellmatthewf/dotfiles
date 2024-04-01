@@ -18,13 +18,9 @@
     "editor.stickyScroll.enabled": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.gotoLocation.multipleDefinitions": "goto",
-    // VSCode ESLint - autoapply fix lint on save
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "always"
-    },
     // Code Runner Extension
     "code-runner.executorMap": {
-        "python": "python $fullFileName"
+        "python": ".venv/bin/python $fullFileName"
     },
     "code-runner.enableAppInsights": false,
     "code-runner.showExecutionMessage": false,
@@ -35,7 +31,8 @@
     "git.autofetch": true,
     // VSCode Python
     "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.ignore": ["*"],
+    "python.analysis.typeCheckingMode": "off",
     "python.terminal.activateEnvironment": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vetur.format.options.useTabs": false,
@@ -90,8 +87,10 @@
     "editor.minimap.enabled": false,
     "[python]": {
         "editor.formatOnType": true,
-
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
@@ -105,5 +104,6 @@
     "window.zoomLevel": 1,
     "testing.followRunningTest": false,
     "python.testing.autoTestDiscoverOnSaveEnabled": false,
-    "black-formatter.path": [".venv/bin/black"]
+    "black-formatter.path": [".venv/bin/black"],
+    "svelte.enable-ts-plugin": true
 }
