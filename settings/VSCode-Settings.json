@@ -1,5 +1,5 @@
 {
-    "tabout.disableByDefault": true,
+    "window.zoomLevel": 1,
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Monokai",
@@ -16,6 +16,7 @@
     "editor.detectIndentation": true,
     "editor.formatOnSave": true,
     "editor.stickyScroll.enabled": true,
+    "editor.guides.bracketPairs": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.gotoLocation.multipleDefinitions": "goto",
     // Code Runner Extension
@@ -31,8 +32,8 @@
     "git.autofetch": true,
     // VSCode Python
     "python.languageServer": "Pylance",
-    "python.analysis.ignore": ["*"],
-    "python.analysis.typeCheckingMode": "off",
+    // "python.analysis.ignore": ["*"],
+    "python.analysis.typeCheckingMode": "basic",
     "python.terminal.activateEnvironment": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vetur.format.options.useTabs": false,
@@ -82,7 +83,8 @@
     },
     "redhat.telemetry.enabled": true,
     "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.autoIndent": "advanced"
     },
     "editor.minimap.enabled": false,
     "[python]": {
@@ -101,9 +103,11 @@
         "*.erb": "erb",
         "*.vue": "vue"
     },
-    "window.zoomLevel": 1,
     "testing.followRunningTest": false,
     "python.testing.autoTestDiscoverOnSaveEnabled": false,
     "black-formatter.path": [".venv/bin/black"],
-    "svelte.enable-ts-plugin": true
+    "svelte.enable-ts-plugin": true,
+    "search.exclude": {
+        "**/.venv": true
+    }
 }
