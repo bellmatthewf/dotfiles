@@ -116,7 +116,7 @@ export LANG=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias grmain="git reset --hard origin/main"
-alias grmaster="git reset --hard origin/master && git clean -fd"
+alias grmaster="git reset --hard origin/master && git clean -fdx"
 alias gac="git add --all && git commit -a -m "
 alias dc='docker-compose'
 alias activate='source .venv/bin/activate'
@@ -219,3 +219,6 @@ alias brewARM=“/opt/homebrew/bin/brew”
 
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
+
+# `pipenv install` creates venv in `./.venv`
+export PIPENV_VENV_IN_PROJECT="1"
