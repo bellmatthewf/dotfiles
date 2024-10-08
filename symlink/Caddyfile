@@ -1,8 +1,3 @@
-{
-	local_certs
-	skip_install_trust
-}
-
 fantazscores.localhost {
 	reverse_proxy 127.0.0.1:3000
 }
@@ -16,5 +11,17 @@ kpisight.localhost {
 }
 
 api.kpisight.localhost {
+	reverse_proxy 127.0.0.1:8000
+}
+
+http://admin.kpisight.localhost {
+	reverse_proxy 127.0.0.1:3001
+}
+
+http://kpisight.localhost {
+	reverse_proxy 127.0.0.1:3000
+}
+
+http://api.kpisight.localhost {
 	reverse_proxy 127.0.0.1:8000
 }
